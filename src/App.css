@@ -1,38 +1,77 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: silver;
+  font-family: 'Abel';
+}
+body {
+  background-color: #05010a;
+}
+header {
+  font-size: 56px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+figure, main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 98vw;
+  margin-bottom: 24px;
 }
-
-.App-link {
-  color: #61dafb;
+main {
+  justify-content: space-around;
+  margin-bottom: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+summary, aside, form {
+  box-shadow: 2px 2px 2px 2px silver;
+  padding: 20px;
+}
+aside, form {
+  padding-left: 40px;
+}
+form {
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+button, input {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+button {
+  margin: 5px;
+  padding: 2px;
+}
+input {
+  background-color: silver;
+  margin-left: 7px;
+}
+button[type="submit"] {
+  margin-left: 75px;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.days-r, .days {
+  display: flex;
+  flex-direction: row;
+  padding-top: 7px;
+  justify-content: space-evenly;
+}
+.days-r p, .days p {
+  color: red;
+}
+.days p {
+  color: green;
+}
+.container {
+  display: flex;
+  flex-direction: row;
 }
